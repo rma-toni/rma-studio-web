@@ -84,3 +84,37 @@ body {
     border-radius: 5px;
     font-weight: bold;
 }
+
+/* ---- RESPONSIVE DESIGN ---- */
+
+/* Tablets y Celulares (Pantallas menores a 768px) */
+@media (max-width: 768px) {
+    
+    .container {
+        flex-direction: column; /* Apila el logo sobre el menú */
+        gap: 15px;
+    }
+
+    .nav-menu ul {
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Achicamos el texto para que no desborde */
+        padding: 0 10px;
+    }
+}
+
+/* Celulares pequeños (Pantallas menores a 480px) */
+@media (max-width: 480px) {
+    .nav-menu ul {
+        flex-direction: column; /* Los links ahora van uno debajo del otro */
+        text-align: center;
+    }
+    
+    .btn-principal {
+        width: 90%; /* El botón ocupa casi todo el ancho para que sea fácil de tocar con el pulgar */
+        text-align: center;
+    }
+}
