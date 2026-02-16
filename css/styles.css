@@ -14,7 +14,7 @@ body {
 
 /*#region HEADER */
 .main-header .container {
-    display: flex;
+    display: flex; 
     justify-content: space-between; 
     align-items: center;
     width: 100%;
@@ -24,10 +24,14 @@ body {
 }
 
 .main-header {
+    position: fixed;/*new*/
+    top: 0;/*new*/
+    left: 0;/*new*/
+    z-index: 9999;/*new*/
     width: 100%;
     background: #fff;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .nav-menu ul { /*inline on pc*/
@@ -65,6 +69,10 @@ body {
 
 .nav-menu a:hover {
     color: #007bff;
+}
+
+#rma-nav {
+    color: blueviolet;
 }
 
 /*#endregion HEADER */
@@ -137,7 +145,7 @@ body {
 .main-footer {
     background-color: #1a1a1a;
     color: #ffffff;
-    padding: 60px 0 20px 0;
+    padding: 20px 0 20px 0;
     margin-top: 20px;
 }
 
@@ -190,7 +198,7 @@ body {
 
 .footer-bottom {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid #333;
     font-size: 0.8rem;
@@ -229,17 +237,35 @@ body {
 
 /* Tablets y Celulares (Pantallas menores a 768px) */
 @media (max-width: 768px) {
+    body {
+        padding-top: 100px; 
+    }
+
+    .main-header {
+        padding: 5px 0;
+    }
     
-    .container {
-        flex-direction: column;
-        gap: 15px;
+    .main-header .container {
+        flex-direction: column; /* Logo arriba, menú abajo */
+        gap: 5px;
     }
-
+    .logo {
+        font-size: 1.2rem;
+    }
     .nav-menu ul {
+        flex-direction: row; 
+        justify-content: center;
         gap: 15px;
-        padding-bottom: 10px;
+        padding: 5px 0;
     }
-
+    .nav-menu a {
+        font-size: 0.85rem; /* Letra más pequeña y delicada */
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .hero {
+        margin-top: 0%;
+    }
     .hero h1 {
         font-size: 2rem;
         padding: 0 10px;
@@ -257,14 +283,13 @@ body {
     .hero h1 {
         font-size: 1.8rem; 
     }
+    .main-footer{
+        padding-top: 5%;
+    }
 }
 
 /* Celulares pequeños (Pantallas menores a 480px) */
 @media (max-width: 480px) {
-    .nav-menu ul {
-        flex-direction: column; 
-        text-align: center;
-    }
     
     .btn-principal {
         width: 90%; 
