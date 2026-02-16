@@ -99,6 +99,7 @@ body {
 }
 
 .services {
+    padding: 80px 0;
     text-align: center;
     background-color: #fff;
     justify-content: center;
@@ -118,7 +119,7 @@ body {
 /* La tarjeta individual */
 .service-card {
     background: #fff;
-    padding: 10px;
+    padding: 30px;
     border: 1px solid #eee;
     border-radius: 10px;
     width: 100%;           /* Ocupa el 100% de su columna del grid */
