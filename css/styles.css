@@ -112,7 +112,6 @@ body {
     justify-content: center; 
     align-items: center;     
 }
-
 .service-banner {
     margin: 0 auto;
     background: linear-gradient(135deg, #ffffff 0%, #f3f7ff 100%);
@@ -126,7 +125,6 @@ body {
     box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
     width: fit-content;
 }
-
 .badge {
     background: blueviolet;
     color: white;
@@ -136,20 +134,17 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
-
 .banner-content h2 {
     font-size: 2rem;
     margin: 15px 0;
     color: #333;
 }
-
 .banner-content p {
     color: #666;
     margin-bottom: 25px;
     max-width: 500px;
     line-height: 1.6;
 }
-
 .btn-banner {
     display: inline-block;
     padding: 15px 30px;
@@ -160,7 +155,6 @@ body {
     font-weight: bold;
     transition: all 0.3s ease;
 }
-
 .btn-banner:hover {
     background-color: #0056b3;
     transform: translateY(-3px);
@@ -174,7 +168,6 @@ body {
         text-align: center;
         padding: 30px 20px;
     }
-    
     .banner-content p {
         margin: 0 auto 25px auto;
     }
@@ -246,7 +239,7 @@ body {
 }
 /*#endregion FOOTER*/
 
-/*#region WHATSAPP BUTTON*/
+/*#region  BUTTON*/
 .wpp-float {
     position: fixed;
     bottom: 25px;
@@ -271,7 +264,7 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/*#endregion WHATSAPP BUTTON*/
+/*#endregion BUTTON*/
 
 /*#region RESPONSIVE DESIGN*/
 
